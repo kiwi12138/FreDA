@@ -323,7 +323,7 @@ def load_cfg_from_args(description="Config options."):
     """Load config from command line args and set any specified options."""
     current_time = datetime.now().strftime("%y%m%d_%H%M%S")
     parser = argparse.ArgumentParser(description=description)
-    parser.add_argument("--cfg", default='cfgs/cifar10_c/eata.yaml',dest="cfg_file", type=str,
+    parser.add_argument("--cfg", default='cifar10_c/FreDA.yaml',dest="cfg_file", type=str,
                         help="Config file location") #todo
     parser.add_argument("opts", default=None, nargs=argparse.REMAINDER,
                         help="See conf.py for all options")
