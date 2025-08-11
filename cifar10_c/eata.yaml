@@ -1,0 +1,34 @@
+MODEL:
+  ADAPTATION: eata
+  ARCH: Standard
+TEST:
+  BATCH_SIZE: 200
+CORRUPTION:
+  DATASET: cifar10_c
+  SEVERITY:
+    - 5
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
+EATA:
+  FISHER_ALPHA: 0
+  D_MARGIN: 0.4
+  FFT_DIM: 6144
+  CLUSTER_SIZE: 200
+  LOCAL_LR: 0.01
+  KMEANS_SIZE: 512
+  CLUSTER_NUM: 4
+  COMM_INTERVAL: 10
