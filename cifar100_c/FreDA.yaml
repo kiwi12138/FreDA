@@ -5,7 +5,7 @@ TEST:
   BATCH_SIZE: 200
 CORRUPTION:
   DATASET: cifar100_c
-  SEVERITY:
+  SEVERITY: 
     - 5
   TYPE:
     - gaussian_noise
