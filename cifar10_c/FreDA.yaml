@@ -8,7 +8,7 @@ CORRUPTION:
   SEVERITY:
     - 5
   TYPE:
-    - gaussian_noise
+    - gaussian_noise 
     - shot_noise
     - impulse_noise
     - defocus_blur
